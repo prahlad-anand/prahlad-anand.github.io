@@ -1,130 +1,278 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Prahlad Anand</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="favicon.png">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prahlad Anand</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://latex.vercel.app/style.css">
+	
+    <style>
+        * {
+            max-width: none;
+			margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        body {
+            /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
 
-				<!-- Nav -->
-					<nav id="nav" align="center">
-						<ul>
-							<li><a href="#intro" class="active">About</a></li>
-							<li><a href="#first">Publications</a></li>
-							<li><a href="#second">CV</a></li>
-						</ul>
-					</nav>
+        .container {
+            /* max-width: 900px; */
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        header {
+            padding: 10px 0 10px;
+            margin-bottom: 10px;
+        }
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Prahlad Anand</h2>
-										</header>
-										<p>A Masters student in Computer Science at Johns Hopkins University, I am interested in machine learning and deep learning techniques in computer vision and medical imaging.</p>
-									</div>
-									<span class="image"><img src="images/profile.jpg" alt="" /></span>
-								</div>
-							</section>
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
 
-							<section class="main">
-								<h2>News</h2>
-								<div class="table-wrapper">
-									<table>
-										<tbody>
-											<tr>
-												<th>Aug 23, 2024</th>
-												<td>Joined IACL at Johns Hopkins as a Graduate Research Assistant!</td>
-											</tr>
-											<tr>
-												<th>Jun 30, 2024</th>
-												<td>Our paper, <i>SSL-RGB2IR: Semi-supervised RGB-to-IR Image-to-Image Translation for Enhancing Vision Task Training in Semantic Segmentation and Object Detection</i> has been accepted to IROS 2024!</td>
-											</tr>
-											<tr>
-												<th>Apr 16, 2024</th>
-												<td>Joined the Master's in CS at Johns Hopkins University!</td>
-											</tr>
-											<tr>
-												<th>May 25, 2022</th>
-												<td>Joined AIRL at IISc as a Research Intern!</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</section>
+        .profile-img {
+            width: 200px;
+            height: 200px;
+			border-radius: 5%;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
 
-						<!-- First Section -->
-							<section id="first" class="main">
-								<header class="major special">
-									<h2>Publications</h2>
-								</header>
-								<div class="spotlight">
-									<span class="square left"><img src="images/ssl-rgb2ir.png" alt="" /></span>
-									<div class="content">
-										<p><strong>SSL-RGB2IR: Semi-supervised RGB-to-IR Image-to-Image Translation for Enhancing Vision Task Training in Semantic Segmentation and Object Detection</strong><br>Aniruddh Sikdar, Qiranul Saadiyean, Prahlad Anand, and Suresh Sundaram<br><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i> 2024.
-											<ul class="actions small">
-												<li><a href="https://ieeexplore.ieee.org/abstract/document/10802815" class="button small">Paper</a></li>
-												<li><a href="https://github.com/prahlad-anand/ssl-rgb2ir" class="button small">Code</a></li>
-											</ul>
-										</p>
-									</div>
-								</div>
-							</section>
+        .header-text {
+            flex: 1;
+            min-width: 280px;
+        }
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>CV</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<a href="images/cv.pdf" class="button primary">Download</a>
-									</li>
-								</ul>
-							</section>
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #002D72;
+        }
 
-					</div>
+        .intro {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Contact</h2>
-							<dl class="alt">
-								<dt>Email</dt>
-								<dd><a href="mailto:panand5@jhu.edu">panand5@jhu.edu</a></dd>
-							</dl>
-						</section>
-						<section>
-							<h2>Profiles</h2>
-							<ul class="icons">
-								<li><a href="https://github.com/prahlad-anand" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/prahlad-anand/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=7iBvHY4AAAAJ" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li>
-							</ul>
-						</section>
-					</footer>
+        nav {
+            margin-top: 20px;
+        }
 
-			</div>
+        nav a {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #002D72;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        nav a:hover {
+            border-bottom-color: #002D72;
+        }
 
-	</body>
+        section {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #68ACE5;
+            padding-bottom: 10px;
+        }
+
+        .publication {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .publication-img {
+            width: 250px;
+            flex-shrink: 0;
+            border: 1px solid #68ACE5;
+            border-radius: 4px;
+        }
+
+        .publication-content {
+			font-size: 1.00em;
+            flex: 1;
+        }
+
+        .publication-title {
+			font-size: 1.00em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .publication-authors {
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .publication-venue {
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 2px solid #68ACE5;
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        footer section {
+            margin-bottom: 0;
+        }
+
+        footer h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+		
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            header {
+                padding: 20px 0;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin-right: 15px;
+                font-size: 0.95em;
+            }
+
+            .publication {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .publication-img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .intro {
+                font-size: 1em;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-right: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+			<h1 class="author">Prahlad Anand</h1>
+            <div class="header-content">
+                
+                <div class="header-text">
+                    <p class="intro">A second year MSE CS student at Johns Hopkins University, I am interested in generative models for medical imaging and computer vision, in particular, harmonization and image translation. I aim to use synthesis models to support and augment real data.</p>
+                    <nav>
+						<a href="files/cv.pdf">cv</a>
+						<a href="mailto:panand5@jhu.edu">panand5@jhu.edu</a>
+                        <a href="https://github.com/prahlad-anand" aria-label="GitHub"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/prahlad-anand/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+						<a href="https://scholar.google.com/citations?user=7iBvHY4AAAAJ" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </nav>
+                </div>
+				<img src="files/profile.jpg" alt="Prahlad Anand" class="profile-img">
+            </div>
+        </header>
+
+        <main>
+
+            <section id="publications">
+                <h2>Publications</h2>
+				<span class="sidenote left"><img src="files/dicom-clip.png" alt="DICOM-CLIP" class="publication-img"></span>
+
+				<div class="publication-title">DICOM-CLIP: Zero-Shot Acquisition Parameter Retrieval from Unprocessed DICOM Files</div>
+				<div class="publication">
+                    <div class="publication-content">
+						<div class="publication-authors"><b>Prahlad Anand</b>, Aaron Carass, Ellen M Mowry, Scott D Newsome, Jerry L Prince, and Blake E Dewey</div>
+                        <div class="publication-venue">ISBI 2026</div>
+						<br>
+                    </div>
+                </div>
+
+				<span class="sidenote left"><img src="files/ssl-rgb2ir.png" alt="SSL-RGB2IR" class="publication-img"></span>
+				<div class="publication-title">SSL-RGB2IR: Semi-supervised RGB-to-IR Image-to-Image Translation for Enhancing Vision Task Training in Semantic Segmentation and Object Detection</div>
+				<div class="publication">
+                    <div class="publication-content">
+                        <div class="publication-authors">Aniruddh Sikdar, Qiranul Saadiyean, <b>Prahlad Anand</b>, and Suresh Sundaram</div>
+                        <div class="publication-venue">IROS 2024</div>
+						<br>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Last Updated Jan 14, 2026.
+        </footer>
+    </div>
+</body>
 </html>
